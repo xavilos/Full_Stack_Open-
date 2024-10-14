@@ -1,11 +1,13 @@
-``mermaid
-graph TD;
-    A[Usuario ingresa texto en el campo de nota] --> B[Usuario hace clic en 'Save'];
-    B --> C[El navegador envía solicitud POST al servidor];
-    C --> D[El servidor procesa la solicitud y guarda la nota];
-    D --> E[El servidor responde con éxito];
-    E --> F[El navegador actualiza la lista de notas];
-    F --> A[La nueva nota se muestra en la página];
-    
-``
+```mermaid
+sequenceDiagram
+participant usuario
+participant navegador
+participant servidor
+    usuario->>navegador: Usuario ingresa texto en el campo de nota y hace clic en 'Save'
+    navegador->>servidor: El navegador envía solicitud POST al servidor
+    servidor->>servidor: El servidor procesa la solicitud y guarda la nota
+    servidor->>servidor: El servidor responde con éxito
+   servidor->>navegador:El navegador actualiza la lista de notas
+   navegador->>navegador: La nueva nota se muestra en la página
+```
 
