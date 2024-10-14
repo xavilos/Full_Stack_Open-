@@ -6,3 +6,6 @@ graph TD;
     D --> E[El servidor responde con éxito];
     E --> F[El navegador actualiza la lista de notas];
     F --> A[La nueva nota se muestra en la página];
+    
+``
+
